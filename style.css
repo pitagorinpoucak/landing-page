@@ -3,6 +3,7 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0;
+  align-items: center;
 }
 
 .header,
@@ -12,6 +13,7 @@ body {
 }
 
 .header {
+  align-self: stretch;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -83,6 +85,98 @@ body {
   border-radius: 0.5rem;
 }
 
-* {
-  outline: 1px solid teal;
+.hero-information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  padding: 3rem;
+}
+
+.hero-information h2 {
+  font-size: 36px;
+  font-weight: 800;
+  color: #1f2937;
+}
+
+.cards {
+  flex-shrink: 0;
+  display: flex;
+  gap: 4rem;
+}
+
+.card .image {
+  border: 3px solid #3882f6;
+  width: 150px;
+  height: 150px;
+  border-radius: 1rem;
+}
+
+.card .description {
+  text-align: center;
+  color: #1f2937;
+}
+
+.hero-quote {
+  background-color: #e5e7eb;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem;
+}
+
+.hero-quote > div {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.quote {
+  font-size: 36px;
+  color: #1f2937;
+  font-style: oblique;
+  margin: 0;
+}
+
+.hero-quote h4 {
+  align-self: flex-end;
+  margin: 0;
+  font-size: 24px;
+  margin: 1rem 0;
+}
+
+.call-to-action {
+  width: 50%;
+  background-color: #3882f6;
+  margin: 3rem;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.call {
+  padding: 2rem;
+}
+
+.call > h4 {
+  font-size: 24px;
+  color: #f9faf8;
+  margin: 0 0 0.5rem 0;
+}
+
+.call > p {
+  font-size: 18px;
+  color: #e5e7eb;
+  margin: 0;
+}
+.call-to-action > .signup {
+  border: 1px solid white;
+}
+
+.footer {
+  align-self: stretch;
+  padding: 2rem;
+  color: #e5e7eb;
+  text-align: center;
 }
